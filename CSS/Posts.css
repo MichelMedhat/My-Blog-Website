@@ -1,0 +1,30 @@
+.post1 > p{
+    grid-area: post1; 
+    text-align: justify;
+    padding: 0px 20px;
+}
+.post2 > p{
+    grid-area: post2;
+    text-align: justify;
+    padding: 0px 20px;
+}
+.post3 > p{
+    grid-area: post3;
+    text-align: justify;
+    padding: 0px 20px;
+}
+.post4 > p{
+    grid-area: post4;
+    text-align: justify;
+    padding: 0px 20px;
+}
+.post5 > p{
+    grid-area: post5;
+    text-align: justify;
+    padding: 0px 20px;
+}
+.post6 > p{
+    grid-area: post6;
+    text-align: justify;
+    padding: 0px 20px;
+}

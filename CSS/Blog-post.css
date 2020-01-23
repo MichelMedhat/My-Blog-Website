@@ -1,0 +1,122 @@
+@import url("Card.css");
+body{
+    padding: 15px;
+    margin: 15px;
+    background-color: #737373;
+}
+h2{
+    padding: 0%;
+    margin: 0%;
+}
+nav, footer{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 15px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #404040;
+    color: white;
+}
+.navigator{
+    display:flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+h3{
+    padding: 0px 20px;
+    font-style: italic;
+}
+#Post{
+    display: block;
+    font-size: 20px;
+}
+.container{
+    display: grid;
+    grid-gap: 10px;
+    /* grid-template-columns: ;
+    grid-template-rows: ; */
+    grid-template-areas: 
+        "Poster"
+        "Bio"
+        "Main-post"
+        "Social-Links";
+} 
+.Main-post > p{
+    text-align: justify;
+}
+a, #post-image{
+    margin: 0%;
+    padding: 0%;
+}
+#homelogo{
+    padding: 15px;
+    vertical-align: middle;
+    float: left;
+}
+.link{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.Poster{
+    grid-area: Poster;
+}
+.Bio{
+    grid-area: Bio;
+}
+.Main-post{
+    grid-area: Main-post;
+}
+.Social-Links{
+    grid-area: Social-Links;  
+    display: flex;
+    flex-direction: column; 
+}
+li{
+    list-style-type: none;
+    font-family: monospace;
+    font-size: 20px;
+}
+ul{
+    margin: 0%;
+    padding: 10px;
+    text-align: start;
+}
+#AuthorImg{
+    height: 200px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+@media(min-width: 700px){
+    .container{
+        grid-template-columns: 60% 40% ;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "Poster Bio"
+            "Main-post Main-post"
+            "Social-Links Social-Links";
+    } 
+    .navigator{
+        display:flex;
+        flex-direction: row;
+    } 
+    .Social-Links{ 
+        display: block; 
+    }
+    h1{
+        width: 100%;
+    }
+}

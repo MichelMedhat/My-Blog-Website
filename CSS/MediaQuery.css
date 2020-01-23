@@ -1,0 +1,68 @@
+@media(min-width: 320px){
+    .container{
+        display: grid;
+        grid-gap: 10px;
+        /* grid-template-columns: ;
+        grid-template-rows: ; */
+        grid-template-areas: 
+            "Recent"
+            "post1"
+            "post2"
+            "post3"
+            "post4"
+            "post5"
+            "post6";
+    }
+    .navigator{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(min-width: 321px) and (max-width: 769px){
+    .container{
+        grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+        grid-template-areas: 
+            "Recent Recent"
+            "post1 post2"
+            "post3 post4"
+            "post5 post6";
+    }  
+    .navigator{
+        display: flex;
+        /* flex-direction: row; */
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    #navList{
+        display: flex;
+    }
+    #nav-bar{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+@media(min-width: 770px){
+    .container{
+        /* grid-template-columns: ;
+    grid-template-rows: ; */
+        grid-template-areas: 
+            "Recent Recent Recent"
+            "post1 post2 post3"
+            "post4 post5 post6";
+    }  
+    .navigator{
+        display: flex;
+        flex-direction: row;
+    }
+    #navList{
+        display: flex;
+    }
+    #nav-bar{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
